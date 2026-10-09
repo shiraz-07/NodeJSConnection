@@ -1,5 +1,3 @@
-javascript
-```
 // .env which is for loading the environment variables
 require("dotenv").config();
 
@@ -26,4 +24,3 @@ async function connectToDatabase() {
         console.log(error.message);
     }
 }
-```
