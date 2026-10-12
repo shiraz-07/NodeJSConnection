@@ -1,12 +1,11 @@
 // .env which is for loading the environment variables
 require("dotenv").config();
-
 const mongoose = require("mongoose");
 
 const connectionString = process.env.MONGO_URL;
 
 if(!connectionString){
-    console.log("Mongo URL is not defined in .env");
+    console.log("Mongo_URL is not defined in .env");
 
     //Program yahi par stop krdo
     process.exit(1);
@@ -24,3 +23,5 @@ async function connectToDatabase() {
         console.log(error.message);
     }
 }
+
+connectToDatabase();
